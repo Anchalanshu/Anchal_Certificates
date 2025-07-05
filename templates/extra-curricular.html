@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Extra-curricular Certificates</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #cdff57, #3eb54e);
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 400px;
+      max-width: 95%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* or 3 / 2 depending on your image shape */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+    .info {
+      padding: 20px;
+    }
+
+    .info h3 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    .info p {
+      font-size: 1.05rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+   .btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  background: #4facfe;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #38f9d7;
+}
+
+
+    @media (max-width: 600px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Extra-curricular Certificates</h1>
+
+  <div class="card-container">
+    <!-- Extra-curricular Certificate 1 -->
+    <div class="card">
+      <img src="../certificates/extra-curricular/ec1.jpg" alt="Event Volunteer Certificate">
+      <div class="info">
+        <h3>VertechX Volunteer</h3>
+        <p>Volunteered for contibuting in Design Team during VertechX 12.0 an Inter Collegiate National Level Tech Fest at MVJCE.</p>
+        <div class="actions">
+          <a href="../certificates/extra-curricular/ec1.jpg" class="btn view-btn" target="_blank">View</a>
+          <a href="../certificates/extra-curricular/ec1.jpg" download class="btn">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra-curricular Certificate 2 -->
+    <div class="card">
+      <img src="../certificates/extra-curricular/ec2.jpg" alt="Cultural Participation Certificate">
+      <div class="info">
+        <h3>Poster Presentation</h3>
+        <p>Participated in poster presentation competition in biology for engineers. <br> Organised by MVJCE</p>
+        <div class="actions">
+          <a href="../certificates/extra-curricular/ec2.jpg" class="btn view-btn" target="_blank">View</a>
+          <a href="../certificates/extra-curricular/ec2.jpg" download class="btn">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
