@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Certificate Showcase</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anchal's Certificate Vault</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #d6f5ff, #fceabb);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 60px;
+      font-size: 2.8rem;
+      color: #333;
+      text-align: center;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #444;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      background: #007bff;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #0056b3;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+        margin-top: 40px;
+      }
+
+      .card-container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
-<body class="home-page">
+<body>
+  <h1>🎓 Anchal's Certificate Vault</h1>
 
-  <div class="intro">
-    <h1>Welcome to My Certificate Portfolio</h1>
-    <p>Select a category below to view certificates across academic, technical, and cultural achievements.</p>
+  <div class="card-container">
+    <div class="card">
+      <div class="emoji">📘</div>
+      <h3>Academic Certificates</h3>
+      <p>Course completions & training records</p>
+      <a href="templates/academic.html">View</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🔧</div>
+      <h3>Workshops Attended</h3>
+      <p>Hands-on learning & expert sessions</p>
+      <a href="templates/workshops.html">View</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🚀</div>
+      <h3>Hackathons</h3>
+      <p>Projects, pitches & team collabs</p>
+      <a href="templates/hackathons.html">View</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🏅</div>
+      <h3>Skill Badges</h3>
+      <p>AI, Cloud, Programming badges</p>
+      <a href="templates/skill-badge.html">View</a>
+    </div>
   </div>
-
-  <div class="category-grid">
-
-    <!-- Academic -->
-<a href="templates/academics.html" target="_blank" class="category-card">
-  <h2>Academics</h2>
-  <p>Explore academic achievements.</p>
-  <div class="btn-container">
-    <span class="card-btn">View Academics</span>
-  </div>
-</a>
-
-
-    <!-- Workshops -->
-    <a href="templates/workshops.html" target="_blank" class="category-card">
-      <h2>Workshops</h2>
-      <p>Hands-on learning certificates from tech and career-oriented workshops.</p>
-      <div class="btn-container">
-        <span class="card-btn">View Workshops</span>
-      </div>
-    </a>
-
-    <!-- Skill Badges -->
-<a href="templates/skill-badge.html" target="_blank" class="category-card">
-  <h2>Skill Badges</h2>
-  <p>Earned badges from platforms like GENAI and GOOGLE.</p>
-  <div class="btn-container">
-    <span class="card-btn">View Skill Badges</span>
-  </div>
-</a>
-
-
-    <!-- Hackathons -->
-    <a href="templates/hackathons.html" target="_blank" class="category-card">
-      <h2>Hackathons</h2>
-      <p>Participation and awards in innovation competitions and team-building tech events.</p>
-      <div class="btn-container">
-        <span class="card-btn">View Hackathons</span>
-      </div>
-    </a>
-
-    <!-- Extra Curricular -->
-    <a href="templates/extra-curricular.html" target="_blank" class="category-card">
-      <h2>Extra-curricular</h2>
-      <p>Certificates from cultural, volunteering, and non-tech activities and contributions.</p>
-      <div class="btn-container">
-        <span class="card-btn">View Extra-curricular</span>
-      </div>
-    </a>
-
-  </div>
-
 </body>
 </html>
