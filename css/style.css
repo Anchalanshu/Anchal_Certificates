@@ -85,7 +85,7 @@ body {
 
 
 .category-card:hover .card-btn {
- •	background: linear-gradient(135deg, #43e97b, #38f9d7);
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
   transform: scale(1.05);
 }
 
